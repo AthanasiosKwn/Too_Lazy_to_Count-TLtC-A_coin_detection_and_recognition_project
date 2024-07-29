@@ -10,4 +10,4 @@ This repository contains 5 files. This README.md file, a pfd file containing a d
 3) radius_descriptors.py : Contains the code that performs coin detection ( the detection method is user defined) and recognition through radius descriptor matching.
 4) SIFT_descriptors.py : Contains the code that performs coin detection (the detection method is user defined) and recognition through SIFT descriptors matching.
 
-Finally, the ground truth images (used for extracting the coin descriptions) are uploaded as well as the test images.
+Finally, the ground truth images (used for extracting the coin descriptions) and the test images are uploaded.
