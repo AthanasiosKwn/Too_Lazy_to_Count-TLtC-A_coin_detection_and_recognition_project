@@ -1,5 +1,8 @@
 # Too_Lazy_to_Count-TLtC-A_coin_detection_and_recognition_project
 Detecting and Recognizing Coins utilizing classic Image Processing and Computer Vision techniques.
+![image](https://github.com/user-attachments/assets/4268c859-142a-4b92-9185-f3cf4c1d42a8)
+
+
 
 With this project, I aim to tackle the problem of detecting coins in images, recognizing their respective values, and calculating the total value of coins present utilizing classic computer vision and image processing methodologies. There are two main aspects to this problem. First, a coin detection algorithm is necessary to detect the coins that appear in an image. Secondly, the program should be able to recognize the type of each detected coin, and to do so, a coin descriptor and a matching method must be implemented.
 
