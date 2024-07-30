@@ -4,7 +4,7 @@ Detecting and Recognizing Coins utilizing classic Image Processing and Computer 
 
 
 
-With this project, I aim to tackle the problem of detecting coins in images, recognizing their respective values, and calculating the total value of coins present utilizing classic computer vision and image processing methodologies. There are two main aspects to this problem. First, a coin detection algorithm is necessary to detect the coins that appear in an image. Secondly, the program should be able to recognize the type of each detected coin, and to do so, a coin descriptor and a matching method must be implemented.
+With this project, I aim to tackle the problem of detecting coins in images, recognizing their respective values, and calculating the total value of coins present utilizing classic computer vision and image processing methodologies. There are two main aspects to this problem. First, a coin detection algorithm is necessary to detect the coins that appear in an image. Secondly, the program should be able to recognize the type of each detected coin, and to do so, a coin descriptor and a matching method must be implemented. The code implementation is in Python mainly utilizing the modules NumPy and OpenCV.
 
 This repository contains 6 files. This README.md file, a pfd file containing a detailed project report and 4 .py files. In detail, these .py files are the following:
 
