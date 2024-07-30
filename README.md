@@ -14,3 +14,7 @@ This repository contains 6 files. This README.md file, a pfd file containing a d
 4) SIFT_descriptors.py : Contains the code that performs coin detection (the detection method is user defined) and recognition through SIFT descriptors matching.
 
 Finally, the ground truth images (used for extracting the coin descriptors) and the test images are uploaded.
+
+
+
+*** In page 11 of the report the dynamically adjusted parameters of the program are discussed. I failed to mention that the contour area threshold (which is one of them) is not limited just to the adaptive thresholding method of detection. It is independent of the detection method and it is a variable used also in the case where the detection method is based on KMeans clustering. That being said, I must note that changes in scale might affect the detection results provided by the KMeans method due to how this threshold value is calculated based on the scaling factor value. ***
