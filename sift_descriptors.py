@@ -278,36 +278,3 @@ coin_recognition_sift(brightness_adjusted_images,kmeans=False)
 
 
 
-#### NOTES #### , 
-# 1. all euro coins have the same face-reverse, the european map and the corrresponding coin value except for those that
-     # came before and those that came after 2007 when the map was updated
-# 2. different level of corrosion to each coin might affect the detection and recognition
-# 3. Only the first method will work for coins that are flipped to their observe side(as long as the scale is the correct), 
-  # because the SIFT descriptors are 
-  # taken from the reverse - common side. The observe differs from country to country and from time to time so
-  # another model should be used for a more general recognition (ex. deep learning)
-
-  #### !!!! Scaling has completely ruined it, nothing is recognized, most likely due to the poor quality of the scaled images
-  # due to interpolation. Maybe increase the scaling factor a bit, or snap new photos !!!!!! I increased the scale
-  # verifies that it has actually changed by seeing the radiuses descriptor fail, but then when tested again with sift
-  # i had the same problem. It turns out that was happenning because of the 'min_keypoints_threshold' parameter it was set in a very hight
-  # value in the first case of the original scale images. but for the scaled images where there is zoom out (scale<1)
-  # the detector finds fewer key points thus the need to decrease the threshold. By doing so we got similar results
-  # as in the case of the not scaled images, verifying the scale invariance of the detector.
-
-  ###!!!!!! difference in results due to Brigthness changes are either none or very small !!!!!!!
-
-
-####TODO change viewpoint?####
-
-#### TODO finally test on web images of euro coins
-
-### TODO plot diagrams to compare the two different methods   ###
-### TODO plot diagrams to see how parameter values affect each method ###
-
-# The SIFT matching process is time consuming and not ideal for real time applications
-
-# Between the two choices for segmentation for the test images, there are no significant differences
-# Indeed the kmeans one is far better at detection but because SIFT is more robust than the radiuses descriptor
-# there are no differences between these two when it comes to false recognitions. They both mis clasify the same coins in the test images
-# What about the other set of images where the scale and the brightness has changed?
